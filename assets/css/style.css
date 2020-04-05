@@ -21,7 +21,7 @@ a:hover {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #149ddd;
+  background: #1483b0;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -290,7 +290,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #1483b0;
   bottom: 0;
   left: 0;
 }
@@ -422,7 +422,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #1483b0;
   position: relative;
 }
 
@@ -474,8 +474,8 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #173b6c;
-  border: 2px solid #173b6c;
+  background: #1483b0;
+  border: 2px solid #1483b0;
 }
 
 .portfolio .portfolio-item {
@@ -728,7 +728,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #1483b0;
   float: left;
   width: 44px;
   height: 44px;
@@ -791,7 +791,7 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #1483b0;
   color: #fff;
 }
 
@@ -938,6 +938,7 @@ section {
   }
   .resume-item-time{
     float: left !important;
+    margin-bottom: 25px;
   }
 }
 
@@ -1023,15 +1024,20 @@ section {
     position: static;
     margin-top: 30px;
   }
-  .resume .resume-item{
-    margin-left: 15px;
-    margin-bottom: 15px;
+  .resume .resume-item{    
+    margin: 0px 15px 15px 15px;
   }
   section{
     padding: 15px 0;
   }
+  .resume .resume-item h4:last-child {
+    margin-bottom: 25px !important;
+  }
+  .resume .resume-item ul{
+    margin-bottom: 25px !important;
+    margin-top: 25px !important;
+  }
 }
-
 #footer {
   padding: 15px;
   color: #f4f6fd;
@@ -1091,7 +1097,7 @@ section {
 .resume-item-time{
     float: right;
     padding: 10px 5px;
-    background-color: rgba(20, 157, 221, 0.65);
+    background-color: rgba(20, 131, 176, 0.35);
     min-width: 235px;
     text-align: center;
     border-radius: 5px;
@@ -1108,4 +1114,7 @@ section {
 }
 .contact h6{
   color: #173b6c;
+}
+.mobile-nav-active .mobile-nav-toggle i:before{
+  content: "\f00d";
 }
