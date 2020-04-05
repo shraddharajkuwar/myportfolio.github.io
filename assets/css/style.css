@@ -203,6 +203,8 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 1;
+  height: 100%;
+  width: 100%;
   backdrop-filter: blur(2.1px);
   -webkit-backdrop-filter: blur(2.1px);
   -moz-backdrop-filter: blur(2.1px);
@@ -254,9 +256,14 @@ a:hover {
   }
   #header .profile img{
     margin: 15px auto;
+    width: 200px;
+    height: 200px;
   }
   .nav-menu{
     padding-top: 0px;
+  }
+  .nav-menu a{
+    padding: 8px 15px;
   }
 }
 
