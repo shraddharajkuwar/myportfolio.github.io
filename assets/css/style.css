@@ -182,7 +182,7 @@ a:hover {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
+  color: #242527;
 }
 
 #hero {
@@ -190,8 +190,7 @@ a:hover {
   height: 100vh;
   background: url("../img/hero-bg4.jpg") top center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left;
+  background-repeat: no-repeat; 
 }
 
 #hero:before {
@@ -247,6 +246,12 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  #hero{
+    height: 60vh;
+  }
+  #hero:before{
+    height: 60vh;
+  }
   #hero h1 {
     font-size: 28px;   
   }
