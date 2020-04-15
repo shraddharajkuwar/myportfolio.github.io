@@ -50,7 +50,7 @@ a:hover {
   z-index: 9999;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #242527;
+  background: #12253f;
   overflow-y: auto; 
 }
 
@@ -195,7 +195,7 @@ a:hover {
 
 #hero:before {
   content: "";
-  background: rgba(25, 100, 132, 0.9);
+  background: rgba(18, 37, 63, 0.55);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -213,6 +213,7 @@ a:hover {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  left: 120px;
 }
 
 #hero h1,#hero h2 {
@@ -269,6 +270,12 @@ a:hover {
   }
   .nav-menu a{
     padding: 8px 15px;
+  }
+  #hero .hero-container{
+    left: 0px;
+  }
+  .section-title h2{
+    font-size: 25px !important;
   }
 }
 
@@ -375,8 +382,7 @@ section {
 .facts .count-box a:hover {
   color: #1f5297;
 }
-.skills{
-  height: 100vh;
+.skills{  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -942,7 +948,10 @@ section {
   }
   .resume-item-time{
     float: left !important;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
+    background-color: unset !important;
+    min-width: unset !important;
+    padding: 10px 20px !important;
   }
 }
 
@@ -1029,7 +1038,7 @@ section {
     margin-top: 30px;
   }
   .resume .resume-item{    
-    margin: 0px 15px 15px 15px;
+    margin: 0px 15px 0px 15px;
   }
   section{
     padding: 15px 0;
@@ -1041,6 +1050,7 @@ section {
     margin-bottom: 25px !important;
     margin-top: 25px !important;
   }
+  
 }
 #footer {
   padding: 15px;
@@ -1121,12 +1131,4 @@ section {
 }
 .mobile-nav-active .mobile-nav-toggle i:before{
   content: "\f00d";
-}
-.portfolio-text{
-    background: #ffffff;
-    padding: 15px 10px;
-    color: #173b6c;
-    border: 1px solid #1483b0;
-    min-height: 100px;
-    text-align: center;
 }
