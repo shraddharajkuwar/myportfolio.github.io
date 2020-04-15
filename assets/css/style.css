@@ -37,7 +37,7 @@ a:hover {
 .back-to-top:hover {
   color: #fff;
   background: #2eafec;
-  transition: background 0.2s ease-in-out;
+  transition:  0.2s ease-in-out;
 }
 
 #header {
@@ -59,7 +59,9 @@ a:hover {
     display: block;
     width: 230px;
     height: 230px;
-    border: 8px solid #1483b0;
+    box-shadow: 4px 4px 9px #151b1e;
+    -webkit-box-shadow: 4px 4px 9px #151b1e;
+    -moz-box-shadow: 4px 4px 9px #151b1e;
 }
 
 #header .profile h1{
@@ -99,6 +101,7 @@ a:hover {
 
 #main {
   margin-left: 300px;
+  clear: both;
 }
 
 @media (max-width: 1199px) {
@@ -170,7 +173,7 @@ a:hover {
 }
 
 .mobile-nav-toggle i {
-  color: #173b6c;
+  color: #1483b0;
 }
 
 .mobile-nav-active {
@@ -182,20 +185,21 @@ a:hover {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #242527;
+  color: #1483b0;
 }
 
 #hero {
-  width: 100%;
+  width: calc(100% - 300px);
   height: 100vh;
-  background: url("../img/hero-bg4.jpg") top center;
+  background: url("../img/hero-bg2.jpg") top center;
   background-size: cover;
   background-repeat: no-repeat; 
+  float: right;
 }
 
 #hero:before {
   content: "";
-  background: rgba(18, 37, 63, 0.55);
+  background: rgba(18, 37, 63, 0.74);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -204,16 +208,12 @@ a:hover {
   z-index: 1;
   height: 100%;
   width: 100%;
-  backdrop-filter: blur(2.1px);
-  -webkit-backdrop-filter: blur(2.1px);
-  -moz-backdrop-filter: blur(2.1px);
-}
+} 
 
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  min-width: 300px;
-  left: 120px;
+  min-width: 300px;  
 }
 
 #hero h1,#hero h2 {
@@ -248,16 +248,18 @@ a:hover {
 
 @media (max-width: 768px) {
   #hero{
-    height: 60vh;
+    height: 80vh;
+    width: 100%;
+    float: unset;
   }
   #hero:before{
-    height: 60vh;
+    height: 80vh;
   }
   #hero h1 {
-    font-size: 28px;   
+    font-size: 30px;   
   }
   #hero h2 {
-    font-size: 18px !important;
+    font-size: 28px !important;
    
   }
   #header .profile img{
@@ -276,6 +278,12 @@ a:hover {
   }
   .section-title h2{
     font-size: 25px !important;
+  }
+  .section-title{
+    padding-bottom: 0px !important;
+  }
+  .contact{
+    padding-bottom: 30px;
   }
 }
 
@@ -1131,4 +1139,13 @@ section {
 }
 .mobile-nav-active .mobile-nav-toggle i:before{
   content: "\f00d";
+}
+.portfolio-text{
+   border: 1px solid #1483b0;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
 }
