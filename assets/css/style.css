@@ -243,6 +243,7 @@ a:hover {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+    width: 100%;
   }
 }
 
