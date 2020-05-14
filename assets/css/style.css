@@ -195,11 +195,12 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat; 
   float: right;
+  background-attachment: fixed;
 }
 
 #hero:before {
   content: "";
-  background: rgba(18, 37, 63, 0.60);
+  background: rgba(71, 92, 121, 0.55);
   position: absolute;
   bottom: 0;
   top: 0;
